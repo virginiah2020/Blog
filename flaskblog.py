@@ -2,6 +2,8 @@ from flask import Flask, render_template, url_for, flash, redirect
 from flaskblog import app
 from flaskblog.models import User, Post
 from forms import RegistrationForm, LoginForm
+from flaskblog.models import User, Post
+from flask_login import login_user, current_user, logout_user, login_required
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'f4d64e66de7a5102a52fd22dcd9e08a0'
