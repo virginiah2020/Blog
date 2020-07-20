@@ -49,11 +49,11 @@ def register():
 def login():
     form = LoginForm()
     if form.validate_on_submit():
-        if form.email.data == 'admin@blog.com' and form.password.data == 'password':
-            flash('You have been logged in!', 'success')
+        if form.email.data == 'virgy@gmail.com' and form.password.data == 'virgy':
+            flash('You are logged in!', 'success')
             return redirect(url_for('home'))
         else:
-            flash('Login Unsuccessful. Please check username and password', 'danger')
+            flash('Unsuccessful.Check username and password', 'alert')
     return render_template('login.html', title='Login', form=form)
 
 @app.route("/logout")
@@ -85,7 +85,7 @@ def account():
         current_user.username = form.username.data
         current_user.email = form.email.data
         db.session.commit()
-        flash('Your account has been updated!', 'success')
+        flash('Now updated!', 'success')
         return redirect(url_for('account'))
     elif request.method == 'GET':
         form.username.data = current_user.username
