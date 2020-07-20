@@ -58,5 +58,9 @@ def logout():
     logout_user()
     return redirect(url_for('home'))
 
+@app.route("/account")
+@login_required
+def account():
+
 if __name__ == '__main__':
     app.run(debug=True)
