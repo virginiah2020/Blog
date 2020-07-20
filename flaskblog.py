@@ -23,7 +23,8 @@ class User(db.model):
 class Post(db.model):
      id = db.Column(db.Interger, primary_key=True)
      title = db.Column(db.String(100), nullable=False)
-     date_posted = db.Column(db.DateTime, nullable=False, )
+     date_posted = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+     content = db.Column(db.Text,nullable =False)
 
 #  Add dictionary which represents a single blog post"
 posts = [
