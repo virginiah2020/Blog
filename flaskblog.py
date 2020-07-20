@@ -26,6 +26,10 @@ class Post(db.model):
      date_posted = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
      content = db.Column(db.Text,nullable =False)
 
+     def __repr__(self):
+         return f"Post('{self.title}','{self.date_posted}')"
+
+
 #  Add dictionary which represents a single blog post"
 posts = [
     {
