@@ -5,13 +5,6 @@ from forms import RegistrationForm, LoginForm
 from flaskblog.models import User, Post
 from flask_login import login_user, current_user, logout_user, login_required
 
-app = Flask(__name__)
-app.config['SECRET_KEY'] = 'f4d64e66de7a5102a52fd22dcd9e08a0'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
-db = SQLAlchemy(app)
-
-
-
 
 posts = [
     {
@@ -60,6 +53,10 @@ def login():
             flash('Login Unsuccessful. Please check username and password', 'danger')
     return render_template('login.html', title='Login', form=form)
 
+@app.route("/logout")
+def logout():
+    logout_user()
+    return redirect(url_for('home'))
 
 if __name__ == '__main__':
     app.run(debug=True)
