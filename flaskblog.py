@@ -1,5 +1,6 @@
 from flask import Flask, render_template, url_for, flash, redirect
-from flask_sqlalchemy import SQLAlchemy
+from flaskblog import app
+from flaskblog.models import User, Post
 from forms import RegistrationForm, LoginForm
 
 app = Flask(__name__)
