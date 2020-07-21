@@ -1,0 +1,3 @@
+Hello {{user.username}}
+Welcome to Vblog
+Post your blog anytime anyday

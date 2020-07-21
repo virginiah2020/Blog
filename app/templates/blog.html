@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{% import "bootstrap/wtf.html" as wtf %}
+
+<html>
+<body bgcolor="#FF0000;">
+{% block content %}
+    <div class="container">
+
+
+
+        <div class="col-md-4">
+
+            {{ wtf.quick_form(blog_form) }}
+        </div>
+
+    </div>
+
+{% endblock %}
+</body>
+</html>
+

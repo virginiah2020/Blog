@@ -1,0 +1,62 @@
+<div class="container">
+    {% macro displayBlogs(blog_list) %}
+      {% for blog in blog_list %}
+      <div class="row">
+  
+        <div class="panel panel-info">
+          <div class="panel-heading">
+          <h2> {{ blog.title}} </h2>
+        </div>
+        <div class="panel-body">
+          <p> {{ blog.blog }}</p>
+      </div>
+      <div class="panel-footer">
+  
+        <p>Posted time: {{ blog.posted }}</p>
+        <button class="btn btn-info">  <a href="/comment">comment on this blog</a></button>
+    </div>
+    </div>
+  </div>
+  {% endfor %}
+  {% endmacro %}
+  {% macro displayComments(comment_list) %}
+    {% for comment in comment_list %}
+    <div class="row">
+    <div class="col-md-6">
+      <div class="panel panel-danger">
+      <div class="panel-body">
+        <p> {{ comment.comment }}</p>
+    </div>
+  
+  </div>
+  </div>
+  </div>
+  {% endfor %}
+  {% endmacro %}
+  </div>
+  
+  {% macro displayBlog(blog_list) %}
+    {% for blog in blog_list %}
+    <div class="row">
+  
+      <div class="panel panel-danger">
+        <div class="panel-heading">
+        <h2> {{ blog.title}} </h2>
+      </div>
+      <div class="panel-body">
+        <p> {{ blog.blog }}</p>
+    </div>
+    <div class="panel-footer">
+  
+      <p>Posted time: {{ blog.posted }}</p>
+      <button class="btn btn-danger">  <a href="/updateblog">update blog</a></button>
+  
+      <button class="btn btn-danger">  <a href="/delete">delete blog</a></button>
+      <button class="btn btn-danger">  <a href="/view comments">View comments for this blog</a></button>
+  
+  </div>
+  {% endfor %}
+  {% endmacro %}
+  </div>
+  </div>
+  
