@@ -5,13 +5,13 @@ h2{
     font: bold italic 2em/1em "Times New Roman", "MS Serif", "New York", serif;
     margin: 0;
     padding: 0;
-    color: #F8F8FF;
-    border-top: solid #F8F8FF medium;
-    border-bottom: dotted #F8F8FF thin;
+    color: #FFBD33;
+    border-top: solid #FFBD33 medium;
+    border-bottom: dotted #FFBD33 thin;
     width: 600px;
   
   
   }
   body{
-    background-color: maroon;
+    background-image: url('https://images.unsplash.com/photo-1519455953755-af066f52f1a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
   }
