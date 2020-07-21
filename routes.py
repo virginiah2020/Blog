@@ -2,7 +2,7 @@ import os
 import secrets
 from PIL import Image
 from flask import Flask, render_template, url_for, flash, redirect
-from flaskblog import app,db,bcrypt
+from flaskblog import db,bcrypt
 from flaskblog.models import User, Post
 from forms import RegistrationForm, LoginForm
 from flaskblog.models import User, Post
