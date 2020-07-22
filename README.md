@@ -16,3 +16,18 @@ Virginiah Wamuyu
  ## live link
 
  vy-blog.herokuapp.com/
+
+ ## known bugs
+
+ no bugs!!!!!
+
+ ## technologies Used
+ bootstrap
+ css
+ html
+ python
+
+## lincense
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
+- Copyright 2020 © <a href="#" target="_blank">Virginiah Wamuyu</a>.
+
