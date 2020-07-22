@@ -6,12 +6,12 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Blogs</a>
+        <a class="navbar-brand" href="#">VBlogs</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li class="active"><a href="{{url_for('main.index')}}">Home</a></li>
-          <li class="active"><a href="{{url_for('main.newblog')}}">Create your blog</a></li>
+          <li class="active"><a href="{{url_for('main.newblog')}}">Create blog</a></li>
   
   
   
@@ -20,7 +20,7 @@
         <ul class="nav navbar-nav navbar-right">
   
           {% if current_user.is_authenticated %}
-          <li><a href="{{url_for('main.profile',uname=current_user.username)}}">Profile</a></li>
+          <li><a href="{{url_for('main.profile',uname=current_user.username)}}">My Profile</a></li>
           <li><a href="{{url_for('auth.logout')}}"><span class="glyphicon glyphicon-log-in"></span> Sign Out</a></li>
           {% else %}
           <li><a href="{{url_for('auth.login')}}"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>

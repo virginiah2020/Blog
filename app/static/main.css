@@ -14,4 +14,7 @@ h2{
   }
   body{
     background-image: url('https://images.unsplash.com/photo-1519455953755-af066f52f1a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
-  }
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;  
+    }
